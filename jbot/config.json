@@ -1,0 +1,11 @@
+{
+	"token": "Put Token Here",
+    "clientId": "Put client ID Here",
+    "guildId": "Put guild ID Here",
+    "setStatus": "dnd",
+    "setActivity": "Change Activity what the bot says",
+    "vRole": "Change to the verify role id",
+    "applyButton": "Change this to your Staff Application URL AKA Website",
+    "version": "3.0.1"
+}
+
