@@ -1,1 +1,0 @@
-Go to https://docs.j-a-c.net/c/discord-bots/basics-bot If you need any help 
