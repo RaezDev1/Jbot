@@ -75,7 +75,7 @@ async function checkVersion() {
 	if(check == version) {
 		console.log(`\x1b[35m[VERSION]: You are on the latest version! (${version})\x1b[0m`);
 	} else {
-		console.log(`\x1b[35m[VERSION]:Version outdated!!!\nCurrent Version: ${version}\nLatest Version: ${check}\x1b[0m`)
+		console.log(`\x1b[35m[VERSION]: Version outdated!!!\nCurrent Version: ${version}\nLatest Version: ${check}\x1b[0m`)
 	};
 }
 
