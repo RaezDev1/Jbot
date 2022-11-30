@@ -1,7 +1,7 @@
 module.exports = {
     app: {
-        token: 'MTAyOTA3MDI3MDIzMDcwODI1Nw.GCrEY0.spo7Wy5qUXzwgxCy40AuQVm8iNw-rtmpGgmV_Y',
-        clientId: '1029070270230708257',
+        token: '',
+        clientId: '',
     },
     
     presence: {
