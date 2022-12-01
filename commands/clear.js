@@ -8,11 +8,14 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages),
 
   async execute(interaction) {
+   
     const number = interaction.options.getString('number');
 await interaction.channel.bulkDelete(number).then(() => {
-    interaction.reply({ content: `${number} Message was deleted`, ephemeral: true }).catch(e => {});
-}).catch(e => {
-    interaction.reply({ content: `You can not delete messages more then 14 days old`, ephemeral: true }).catch(e => {});
+    interaction.reply({ content: `${number} Message was deleted`, ephemeral: true }).catch(err => {
+    interaction.reply({ content: `You can not delete messages more then 14 days old`, ephemeral: true })
+    })
 });
 }
+
 };
+

@@ -1,4 +1,4 @@
-
+const {Events} = require('discord.js');
 module.exports = {
   name: 'interactionCreate',
   on: true,
@@ -8,10 +8,11 @@ module.exports = {
         ' in #' +
         client.channel.name +
         ' triggered an interaction.'
-    )
-  },
-}
 
+    )
+
+}
+};
 
     //!interaction?.member?.roles?.cache?.has(vRole) &&
       //(await client.member.roles.add(vRole).catch(function (member) {
