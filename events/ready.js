@@ -6,7 +6,7 @@ module.exports = {
 	name: 'ready',
 	once: true,
 	execute(client) {
-		console.log(`\x1b[36m[CREDITS]: This bot was made by Jason L.\x1b[0m`)
+		console.log(`\x1b[36m[CREDITS]: This bot was made by RaezDev.\x1b[0m`)
 		figlet('JBot'
 		, function(err, data) {
 			if (err) {
