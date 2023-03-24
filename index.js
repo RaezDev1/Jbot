@@ -58,26 +58,8 @@ client.on('interactionCreate', async interaction => {
 		await command.execute(interaction);
 	} catch (error) {
 		console.error(error);
-		await interaction.reply({ content: 'There was an error! Please join the support server and make a ticket and use code `JBot.ERRORv2`', ephemeral: true });
+		await interaction.reply({ content: 'There was an error!', ephemeral: true });
 	}
 });
-
-checkVersion();
-async function checkVersion() {
-	let version = "1.1.0"
-	let versionCallback = await axios({
-        method: 'GET', 
-        url: `https://raw.githubusercontent.com/JasonLsd/version-pub-api/main/versions.json`,
-        headers: {Accept: 'application/json, text/plain, */*','User-Agent': '*'} 
-    });
-	if(!versionCallback.data) return console.log('Version check failed...');
-	let check = versionCallback.data.jbot
-	if(check == version) {
-		console.log(`\x1b[35m[VERSION]: You are on the latest version! (${version})\x1b[0m`);
-	} else {
-		console.log(`\x1b[35m[VERSION]:Version outdated!!!\nCurrent Version: ${version}\nLatest Version: ${check}\x1b[0m`)
-	};
-}
-
 
 client.login(app.token);
