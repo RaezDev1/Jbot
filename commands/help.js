@@ -3,7 +3,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('help')
-    .setDescription('Replies with help menu! Made by Jason L.'),
+    .setDescription('Replies with help menu! '),
   async execute(interaction) {
     const helpmenu = new EmbedBuilder()
       .setColor(0x0099FF)
