@@ -71,7 +71,6 @@ module.exports = {
         },
       )
       .setTimestamp()
-      .setFooter({ text: `Made by Jason L.#9406` })
     await interaction.reply({  embeds: [helpmenu], ephemeral: true,})
   },
 }
